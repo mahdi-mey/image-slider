@@ -7,8 +7,35 @@
     <!-- css and js links -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <!-- icons link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </head>
 <body>
+
+    <div class="slider-container">
+         <!-- prev and next icons -->
+         <div class="prev-wrapper">
+            <ion-icon name="arrow-back-outline" class="icon" id="prevBtn"></ion-icon>
+        </div>
+        <div class="next-wrapper">
+            <ion-icon name="arrow-forward-outline" class="icon" id="nextBtn"></ion-icon>
+        </div>
+
+
+        <!-- image container -->
+        <div class="image-wrapper">
+            <img src="images/5.jpg" id="lastClone" alt="Random-Image">
+            <img src="images/1.jpg" alt="Random-Image">
+            <img src="images/2.jpg" alt="Random-Image">
+            <img src="images/3.jpg" alt="Random-Image">
+            <img src="images/4.jpg" alt="Random-Image">
+            <img src="images/5.jpg" alt="Random-Image">
+            <img src="images/1.jpg" id="first-clone" alt="Random-Image">
+        </div>
+
+    </div>
     
 </body>
 </html>
