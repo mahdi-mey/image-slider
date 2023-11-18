@@ -3,3 +3,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+    background-color: #eee;
+
+    display: grid;
+    place-content: center;
+    padding: 0 1rem;
+}
