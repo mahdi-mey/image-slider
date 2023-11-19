@@ -44,3 +44,16 @@ function prevImage(){
 // eventlisteners for click
 nextBtn.addEventListener('click', nextImage)
 prevBtn.addEventListener('click', prevImage)
+
+
+//event listeners for arrow buttons
+document.addEventListener('keyup', e => {
+    if(e.code === "ArrowRight"){
+        nextImage()
+        console.log('next imagee from keyboard');
+    }
+    else if(e.code === "ArrowLeft"){
+        prevImage()
+        console.log('prev image from kryboard');
+    }
+})
