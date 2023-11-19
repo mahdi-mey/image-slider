@@ -12,6 +12,19 @@ const size = sliderImages[0].clientWidth
 
 imageWrapper.style.transform = `translateX(${-size * counter}px)`
 
+imageWrapper.addEventListener('transitionend', () => {
+    if(sliderImages[counter].id === 'lastClone'){
+        imageWrapper.style.transition = 'none'
+        counter = sliderImages.length - 2
+        imageWrapper.style.transform = `translateX(${-size * counter}px)`
+    }
+    else if(sliderImages[counter].id === 'firstClone'){
+        imageWrapper.style.transition = 'none'
+        counter = sliderImages.length - counter
+        imageWrapper.style.transform = `translateX(${-size * counter}px)`
+    }
+})
+
 function nextImage(){
     if(counter >= sliderImages.length - 1) return;
     imageWrapper.style.transition = 'transform 0.5s ease-in-out'
