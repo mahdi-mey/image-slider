@@ -18,7 +18,7 @@ imageWrapper.addEventListener('transitionend', () => {
         counter = sliderImages.length - 2
         imageWrapper.style.transform = `translateX(${-size * counter}px)`
     }
-    else if(sliderImages[counter].id === 'firstClone'){
+    if(sliderImages[counter].id === 'firstClone'){
         imageWrapper.style.transition = 'none'
         counter = sliderImages.length - counter
         imageWrapper.style.transform = `translateX(${-size * counter}px)`
@@ -30,7 +30,6 @@ function nextImage(){
     imageWrapper.style.transition = 'transform 0.5s ease-in-out'
     counter++
     imageWrapper.style.transform = `translateX(${-size * counter}px)`
-    console.log('next image click');
 }
 
 function prevImage(){
@@ -38,7 +37,6 @@ function prevImage(){
     imageWrapper.style.transition = 'transform 0.5s ease-in-out'
     counter--
     imageWrapper.style.transform = `translateX(${-size * counter}px)`
-    console.log('prev image click');
 }
 
 // eventlisteners for click
@@ -50,10 +48,8 @@ prevBtn.addEventListener('click', prevImage)
 document.addEventListener('keyup', e => {
     if(e.code === "ArrowRight"){
         nextImage()
-        console.log('next imagee from keyboard');
     }
     else if(e.code === "ArrowLeft"){
         prevImage()
-        console.log('prev image from kryboard');
     }
 })
