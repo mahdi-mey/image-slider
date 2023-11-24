@@ -8,4 +8,7 @@ This project is a responsive Image Slider built with pure JavaScript and CSS. It
 * Responsive Design: The image slider is responsive and can adapt to different screen sizes. 
 * Navigation Controls: The image slider has forward and backward controls.
 
+## Contributing
+Pull requests are welcomed. For major changes, please open an issue first to discuss what you would like to change.
+
 [View Demo](https://mahdi-mey.github.io/image-slider/)
